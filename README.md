@@ -52,6 +52,27 @@ signals instead of relying on either alone:
 | **Attribute re-ranking** | Each candidate is scored against the parsed attributes (garment weighted highest, then color, then environment) and blended with the embedding similarity (`0.6 * embedding + 0.4 * attribute`) |
 | **Result** | Top-K images returned, ranked by the fused score |
 
+## Results
+
+Two example queries run against the deployed app — note how the results shift based on
+which attributes are parsed from the query, and how the attribute score (`attr`) boosts
+images that match the requested garment/color even when the raw embedding similarity
+(`emb`) alone wouldn't have ranked them highest.
+
+**Query: "red dress"**
+> Parsed attributes: `Garments: ['dress'] | Colors: ['red'] | Environment: —`
+
+<p align="center">
+  <img src="red_dress_result.png" alt="Search results for 'red dress'" width="800">
+</p>
+
+**Query: "Professional business attire inside a modern office."**
+> Parsed attributes: `Garments: — | Colors: — | Environment: office`
+
+<p align="center">
+  <img src="assets/office_outfit.png" alt="Search results for 'Professional business attire inside a modern office'" width="800">
+</p>
+
 ## Repository structure
 
 ```
