@@ -28,7 +28,7 @@ signals instead of relying on either alone:
    "vibe" but wrong on a specific requested attribute.
 
 <p align="center">
-  <img src="assets/pipeline_diagram.png" alt="Pipeline diagram" width="700">
+  <img src="pipeline_diagram.png" alt="Pipeline diagram" width="700">
 </p>
 
 ## How it works
