@@ -70,7 +70,7 @@ images that match the requested garment/color even when the raw embedding simila
 > Parsed attributes: `Garments: — | Colors: — | Environment: office`
 
 <p align="center">
-  <img src="assets/office_outfit.png" alt="Search results for 'Professional business attire inside a modern office'" width="800">
+  <img src="office_outfit.png" alt="Search results for 'Professional business attire inside a modern office'" width="800">
 </p>
 
 ## Repository structure
